@@ -1,17 +1,3 @@
 # GenomeAnalysis
 
-This repository contains the following files:
-Projectplan - Containing the outlook of the project as well as the aim of it.
-Goals/hypotheses
-Genome assembly - information and results concerning this analysis
-Quality assessment - information and results concerning this analysis
-Annotation - information and results concerning this analysis
-Synteny comparsion - information and results concerning this analysis
-Preprocessing - information and results concerning this analysis
-Mapping - information and results concerning this analysis
-Counting of RNA reads - information and results concerning this analysis
-Differential expression - information and results concerning this analysis
-Results - results for each analysis
-Discussion - A section where the results are discussed
-General thoughts - if questions or thoughts arises they are noted here
-Daily log - what was performed each day
+Repository for reproducing results from the study “Multi-omics Reveals the Lifestyle of the Acidophilic, MineralOxidizing Model Species Leptospirillum ferriphilumT” ( Stephan Christel,a Malte Herold,b Sören Bellenberg,c Mohamed El Hajjami,d Antoine Buetti-Dinh,e,f Igor V. Pivkin,e,f Wolfgang Sand,c,g,h Paul Wilmes,b Ansgar Poetsch,d,i Mark Dopsona, 2017), as part of the course Genome Analysis.
