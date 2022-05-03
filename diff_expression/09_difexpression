@@ -1,0 +1,61 @@
+# Your commands
+dir <- "/home/nelli/GenomeAnalysis/count_reads/"
+sampleFiles <- grep("txt",list.files(dir),value=TRUE)
+sampleCondition <- c("continuous", "continuous", "mineral", "mineral", "continuous")
+sampleTable <- data.frame(sampleName = sampleFiles,
+                            fileName = sampleFiles,
+                            condition = sampleCondition)
+sampleTable$condition <- factor(sampleTable$condition)
+library("DESeq2")
+ddsHTSeq <- DESeqDataSetFromHTSeqCount(sampleTable = sampleTable,
+                                       dir = dir,
+                                       design= ~ condition)
+ddsHTSeq
+
+# Here I filter away rows that have less then 10 reads
+keep <- rowSums(counts(ddsHTSeq)) >= 10
+ddsHTSeq <- ddsHTSeq[keep,]
+
+ddsHTSeq$condition <- factor(ddsHTSeq$condition, levels = c("continuous","mineral"))
+
+# Performing the differential expression analysis
+ddsHTSeq <- DESeq(ddsHTSeq)
+res <- results(ddsHTSeq)
+res
+
+#res <- results(ddsHTSeq, name="continuous_vs_mineral")
+
+resultsNames(ddsHTSeq)
+resLFC <- lfcShrink(ddsHTSeq, coef="condition_mineral_vs_continuous", type="apeglm")
+resLFC
+
+# Ordering res based on p values (smallest)
+resOrdered <- res[order(res$pvalue),]
+summary(res)
+# pvalues less than 0.1
+sum(res$padj < 0.1, na.rm=TRUE)
+
+res05 <- results(ddsHTSeq, alpha=0.05)
+summary(res05)
+sum(res05$padj < 0.05, na.rm=TRUE)
+
+# Weightening - need visualize
+library("IHW")
+resIHW <- results(ddsHTSeq, filterFun=ihw)
+summary(resIHW)
+sum(resIHW$padj < 0.1, na.rm=TRUE)
+metadata(resIHW)$ihwResult
+
+# Visualization
+plotMA(resLFC, ylim=c(-2,2))
+idx <- identify(res$baseMean, res$log2FoldChange)
+rownames(res)[idx]
+
+#Plot
+plotCounts(ddsHTSeq, gene=which.min(res$padj), intgroup="condition")
+
+plot(metadata(res)$filterNumRej, 
+     type="b", ylab="number of rejections",
+     xlab="quantiles of filter")
+lines(metadata(res)$lo.fit, col="red")
+abline(v=metadata(res)$filterTheta)
