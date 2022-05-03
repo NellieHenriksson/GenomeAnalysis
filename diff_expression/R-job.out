@@ -1,0 +1,185 @@
+Nearly all CRAN and BioConductor packages are installed and available by
+loading the module R_packages/4.1.1 
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomicRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+class: DESeqDataSet 
+dim: 2624 5 
+metadata(1): version
+assays(1): counts
+rownames(2624): ANGAOLMJ_00001 ANGAOLMJ_00002 ... ANGAOLMJ_02678
+  ANGAOLMJ_02679
+rowData names(0):
+colnames(5): ERR2036629.txt ERR2036630.txt ERR2036631.txt
+  ERR2036632.txt ERR2036633.txt
+colData names(1): condition
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+log2 fold change (MLE): condition mineral vs continuous 
+Wald test p-value: condition mineral vs continuous 
+DataFrame with 2554 rows and 6 columns
+                baseMean log2FoldChange     lfcSE       stat    pvalue
+               <numeric>      <numeric> <numeric>  <numeric> <numeric>
+ANGAOLMJ_00005   6.64301     -1.2921303  0.904005 -1.4293399  0.152907
+ANGAOLMJ_00012   1.27579      1.3681790  2.071034  0.6606259  0.508852
+ANGAOLMJ_00017  16.30639      0.0492905  0.643106  0.0766445  0.938906
+ANGAOLMJ_00018 185.79058     -0.1267616  0.337531 -0.3755550  0.707248
+ANGAOLMJ_00019 516.86183      0.0239586  0.175292  0.1366785  0.891285
+...                  ...            ...       ...        ...       ...
+ANGAOLMJ_02641  11.14374      0.8150073  0.830402   0.981462  0.326365
+ANGAOLMJ_02642  71.34571     -0.0854933  0.349019  -0.244953  0.806493
+ANGAOLMJ_02643  91.20298      0.0567431  0.291529   0.194640  0.845675
+ANGAOLMJ_02644 769.90587     -0.2932058  0.179898  -1.629848  0.103134
+ANGAOLMJ_02658   3.22102     -1.1894703  1.351014  -0.880428  0.378628
+                    padj
+               <numeric>
+ANGAOLMJ_00005  0.328933
+ANGAOLMJ_00012        NA
+ANGAOLMJ_00017  0.971898
+ANGAOLMJ_00018  0.837724
+ANGAOLMJ_00019  0.946872
+...                  ...
+ANGAOLMJ_02641  0.528861
+ANGAOLMJ_02642  0.897138
+ANGAOLMJ_02643  0.921885
+ANGAOLMJ_02644  0.247837
+ANGAOLMJ_02658        NA
+[1] "Intercept"                       "condition_mineral_vs_continuous"
+using 'apeglm' for LFC shrinkage. If used in published research, please cite:
+    Zhu, A., Ibrahim, J.G., Love, M.I. (2018) Heavy-tailed prior distributions for
+    sequence count data: removing the noise and preserving large differences.
+    Bioinformatics. https://doi.org/10.1093/bioinformatics/bty895
+log2 fold change (MAP): condition mineral vs continuous 
+Wald test p-value: condition mineral vs continuous 
+DataFrame with 2554 rows and 5 columns
+                baseMean log2FoldChange     lfcSE    pvalue      padj
+               <numeric>      <numeric> <numeric> <numeric> <numeric>
+ANGAOLMJ_00005   6.64301     -0.3029120  0.531593  0.152907  0.328933
+ANGAOLMJ_00012   1.27579      0.0731484  0.465415  0.508852        NA
+ANGAOLMJ_00017  16.30639      0.0179176  0.378365  0.938906  0.971898
+ANGAOLMJ_00018 185.79058     -0.0832954  0.276614  0.707248  0.837724
+ANGAOLMJ_00019 516.86183      0.0211501  0.164243  0.891285  0.946872
+...                  ...            ...       ...       ...       ...
+ANGAOLMJ_02641  11.14374      0.2155953  0.454726  0.326365  0.528861
+ANGAOLMJ_02642  71.34571     -0.0545358  0.281710  0.806493  0.897138
+ANGAOLMJ_02643  91.20298      0.0415279  0.247661  0.845675  0.921885
+ANGAOLMJ_02644 769.90587     -0.2605905  0.172311  0.103134  0.247837
+ANGAOLMJ_02658   3.22102     -0.1260843  0.468379  0.378628        NA
+
+out of 2554 with nonzero total read count
+adjusted p-value < 0.1
+LFC > 0 (up)       : 385, 15%
+LFC < 0 (down)     : 378, 15%
+outliers [1]       : 0, 0%
+low counts [2]     : 50, 2%
+(mean count < 4)
+[1] see 'cooksCutoff' argument of ?results
+[2] see 'independentFiltering' argument of ?results
+
+[1] 763
+
+out of 2554 with nonzero total read count
+adjusted p-value < 0.05
+LFC > 0 (up)       : 315, 12%
+LFC < 0 (down)     : 302, 12%
+outliers [1]       : 0, 0%
+low counts [2]     : 50, 2%
+(mean count < 4)
+[1] see 'cooksCutoff' argument of ?results
+[2] see 'independentFiltering' argument of ?results
+
+[1] 617
+Only 1 bin; IHW reduces to Benjamini Hochberg (uniform weights)
+
+out of 2554 with nonzero total read count
+adjusted p-value < 0.1
+LFC > 0 (up)       : 384, 15%
+LFC < 0 (down)     : 376, 15%
+outliers [1]       : 0, 0%
+[1] see 'cooksCutoff' argument of ?results
+see metadata(res)$ihwResult on hypothesis weighting
+
+[1] 760
+ihwResult object with 2554 hypothesis tests 
+Nominal FDR control level: 0.1 
+Split into 1 bins, based on an ordinal covariate
+character(0)
