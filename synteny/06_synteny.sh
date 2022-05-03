@@ -1,6 +1,6 @@
 #!/bin/bash -l
 #SBATCH -A uppmax2022-2-5
-#SBATCH --reservation=uppmax2022-2-5_3
+#SBATCH --reservation=uppmax2022-2-5_6
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
@@ -15,4 +15,4 @@ module load blast
 
 #blastn –db nt –query input/L.ferriphilum.fsa –out Blast_L.ferriphilium.out -remote
 
-blastn -subject /home/nelli/GenomAnalysis_rawdata/2_Christel_2017/reference/OBMB01.fasta -query input/L.ferriphilum.fsa  -out L.ferriphilium_blast.out -outfmt "6 qseqid sseqid pident qlen length qstart qend sstart send"
+blastn -subject /home/nelli/GenomAnalysis_rawdata/2_Christel_2017/reference/OBMB01.fasta -query input/L.ferriphilum.fsa  -out L.ferriphilium_blastn.out -outfmt 6 #"6 qseqid sseqid pident qlen length qstart qend sstart send" 
