@@ -1,8 +1,6 @@
 # GenomeAnalysis
 
-Repository for reproducing results from the study “Multi-omics Reveals the Lifestyle of the Acidophilic, MineralOxidizing Model Species Leptospirillum ferriphilumT” ( Stephan Christel,a Malte Herold,b Sören Bellenberg,c Mohamed El Hajjami,d Antoine Buetti-Dinh,e,f Igor V. Pivkin,e,f Wolfgang Sand,c,g,h Paul Wilmes,b Ansgar Poetsch,d,i Mark Dopsona, 2017), as part of the course Genome Analysis.
-fastqquality contains the quaity control for the rna reads. In this folder there are two scripts; one for quality control before preprocessing and one after trimming the reads, the latere is specified with a pro after the common indexing. The repository also contain two directiries which contains the outputs from the two analyses.
-Each repository contains the code for the specified analysis. Code files end with .sh and are refered with indexes correpsonding to the indexes in the wiki. Some repositories have other files which are further specified below.
+Repository for reproducing results from the study “Multi-omics Reveals the Lifestyle of the Acidophilic, MineralOxidizing Model Species Leptospirillum ferriphilumT” ( Stephan Christel,a Malte Herold,b Sören Bellenberg,c Mohamed El Hajjami,d Antoine Buetti-Dinh,e,f Igor V. Pivkin,e,f Wolfgang Sand,c,g,h Paul Wilmes,b Ansgar Poetsch,d,i Mark Dopsona, 2017), as part of the course Genome Analysis. fastqquality contains the quaity control for the rna reads. In this folder there are two scripts; one for quality control before preprocessing and one after trimming the reads, the latere is specified with a pro after the common indexing. The repository also contain two directiries which contains the outputs from the two analyses. Each repository contains the code for the specified analysis. Code files end with .sh and are refered with indexes correpsonding to the indexes in the wiki. Some repositories have other files which are further specified below.
 
 Repositories:
 
