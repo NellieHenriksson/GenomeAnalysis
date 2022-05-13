@@ -1,1 +1,0 @@
-assembly.sh contains the script used for the assembly job using canu. It uses the raw PacBio DNA data.
