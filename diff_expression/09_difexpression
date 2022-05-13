@@ -52,7 +52,14 @@ idx <- identify(res$baseMean, res$log2FoldChange)
 rownames(res)[idx]
 
 #Plot
-plotCounts(ddsHTSeq, gene=which.min(res$padj), intgroup="condition")
+#plotCounts(ddsHTSeq, gene=which.min(res$padj), intgroup="condition")
+plotCounts(ddsHTSeq, gene="ANGAOLMJ_02089", intgroup="condition")
+#plotCounts(ddsHTSeq, gene="ANGAOLMJ_00013", intgroup="condition")
+plotCounts(ddsHTSeq, gene="ANGAOLMJ_02423", intgroup="condition")
+plotCounts(ddsHTSeq, gene="ANGAOLMJ_00885", intgroup="condition")
+plotCounts(ddsHTSeq, gene="ANGAOLMJ_00913", intgroup="condition")
+plotCounts(ddsHTSeq, gene="ANGAOLMJ_00237", intgroup="condition")
+
 
 plot(metadata(res)$filterNumRej, 
      type="b", ylab="number of rejections",
