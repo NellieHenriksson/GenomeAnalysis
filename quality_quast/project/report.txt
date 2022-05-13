@@ -1,0 +1,53 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     2022.03.30_assembly_L.ferriphilum.contigs
+# contigs (>= 0 bp)          3                                        
+# contigs (>= 1000 bp)       3                                        
+# contigs (>= 5000 bp)       3                                        
+# contigs (>= 10000 bp)      3                                        
+# contigs (>= 25000 bp)      2                                        
+# contigs (>= 50000 bp)      1                                        
+Total length (>= 0 bp)       2622286                                  
+Total length (>= 1000 bp)    2622286                                  
+Total length (>= 5000 bp)    2622286                                  
+Total length (>= 10000 bp)   2622286                                  
+Total length (>= 25000 bp)   2606149                                  
+Total length (>= 50000 bp)   2561111                                  
+# contigs                    3                                        
+Largest contig               2561111                                  
+Total length                 2622286                                  
+Reference length             2610531                                  
+GC (%)                       54.17                                    
+Reference GC (%)             54.14                                    
+N50                          2561111                                  
+NG50                         2561111                                  
+N75                          2561111                                  
+NG75                         2561111                                  
+L50                          1                                        
+LG50                         1                                        
+L75                          1                                        
+LG75                         1                                        
+# misassemblies              1                                        
+# misassembled contigs       1                                        
+Misassembled contigs length  2561111                                  
+# local misassemblies        0                                        
+# scaffold gap ext. mis.     0                                        
+# scaffold gap loc. mis.     0                                        
+# unaligned mis. contigs     0                                        
+# unaligned contigs          1 + 0 part                               
+Unaligned length             45038                                    
+Genome fraction (%)          97.567                                   
+Duplication ratio            1.012                                    
+# N's per 100 kbp            0.00                                     
+# mismatches per 100 kbp     0.04                                     
+# indels per 100 kbp         14.09                                    
+Largest alignment            1767861                                  
+Total aligned length         2577248                                  
+NA50                         1767861                                  
+NGA50                        1767861                                  
+NA75                         793250                                   
+NGA75                        793250                                   
+LA50                         1                                        
+LGA50                        1                                        
+LA75                         2                                        
+LGA75                        2                                        
