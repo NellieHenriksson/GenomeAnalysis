@@ -12,7 +12,11 @@ DNA_assembly_quality - contains quality.sh for the quality control using mummerp
 
 Preprocessing_RNA - contains 04_pre_processing.sh script.
 
+count_reads - contains 08_countingreads.sh script for Htseq analysis
+
 diff_expression - contains 09_difexpression.sh R script for diferential expression analysis and 09_runR.sh for running the 09_difexpression.sh script as batch job. Also contain R-job.out file which contains the output of the diferential expression analysis. Contains Rplots.pdf which stores the two plots produced in the analysis.
+
+fastqquality - contains 03_quality_reads.sh script and 03_quality_reads_pro.sh script for fastqc quality assessment before and after pre processing
 
 mapping - contains 07_mapping.sh script which creates a bwa index. Contains too 07_mem.sh script performing the mapping analysis.
 
