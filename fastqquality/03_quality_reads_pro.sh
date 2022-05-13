@@ -12,5 +12,5 @@ module load bioinfo-tools
 module load FastQC
 # Your commands
 
-fastqc /home/nelli/GenomeAnalysis/Preprocessing_RNA/*fastq.gz -o /home/nelli/GenomeAnalysis/Quality_pre_RNA/fastqquality/outpro -f fastq
+fastqc /home/nelli/GenomeAnalysis/Preprocessing_RNA/*fastq.gz -o /home/nelli/GenomeAnalysis/fastqquality/outpro -f fastq
 
