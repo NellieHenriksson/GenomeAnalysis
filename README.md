@@ -4,7 +4,7 @@ Repository for reproducing results from the study “Multi-omics Reveals the Lif
 
 Repositories:
 
-DNA_annotation - contain the 05_annotation.sh script and a directory for annotation refinement. annotationrefinement contains the script used for refinement of the annotation.
+DNA_annotation - contain the 05_annotation.sh script and two directories. Directory annotationrefinement contains the script used for refinement of the annotation. Directory EggNOG-mapper contains the reuslts from the online analysis using the online software EggNOG-mapper. The files contain the annotations predicted, a feature file (gff), the geneprediction in fasta format and the gene prediction in csv format (hits).
 
 DNA_assembly - contains the 01_assembly.sh script.
 
